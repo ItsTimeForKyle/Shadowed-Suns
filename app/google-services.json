@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "36710422805",
+    "firebase_url": "https://shadowedsuns-54630.firebaseio.com",
+    "project_id": "shadowedsuns-54630",
+    "storage_bucket": "shadowedsuns-54630.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36710422805:android:6e4d7bac83e22ac7",
+        "android_client_info": {
+          "package_name": "com.pronockassembly.shadowedsuns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36710422805-1b914v0ulup0n87pfqgkdjddi61lomig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqmYU_6yMkwnl-Qm8jBX6g25BI2QBfE5M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
