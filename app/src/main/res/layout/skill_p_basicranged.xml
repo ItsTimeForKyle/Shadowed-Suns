@@ -4,8 +4,23 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/pointHeader3BR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="3 point skills" />
+    <TextView
+        android:id="@+id/handguns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handguns" />
+    <TestView
+         android:id="@id/gunSlinger"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Gunslinger(3)" />                                         
+    <TestView
+         android:id="@id/gunSlingerText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="When using a handgun you gain +2 to damage rolls." />
 </LinearLayout>
