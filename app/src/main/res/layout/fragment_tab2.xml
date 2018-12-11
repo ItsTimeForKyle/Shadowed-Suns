@@ -29,13 +29,15 @@
 
                 <TextView
                     android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:text="Perception Trait"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,10 +59,10 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <com.alespero.expandablecardview.ExpandableCardView
-                android:id="@+id/perceptiontalent"
+                android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -69,8 +71,7 @@
                 android:layout_marginBottom="10dp"
                 app:animationDuration="300"
                 app:expandOnClick="true"
-                app:icon="@android:drawable/star_on"
-                app:inner_view="@layout/skill_p_basicranged"
+                app:inner_view="@layout/skill_p_trait"
                 app:startExpanded="false"
                 app:title="Perception Trait Talents" />
         </android.support.v7.widget.CardView>
@@ -94,8 +95,7 @@
                 android:textSize="16sp"
                 app:animationDuration="300"
                 app:expandOnClick="true"
-                app:icon="@android:drawable/star_on"
-                app:inner_view="@layout/skill_p_insight"
+                app:inner_view="@layout/skill_p_insight1"
                 app:startExpanded="false"
                 app:title="Insight" />
         </android.support.v7.widget.CardView>
@@ -119,10 +119,107 @@
                 android:elevation="@dimen/default_card_height"
                 app:animationDuration="300"
                 app:expandOnClick="true"
-                app:icon="@android:drawable/star_on"
-                app:inner_view="@layout/skill_p_basicranged"
+                app:inner_view="@layout/skill_p_awareness"
                 app:startExpanded="false"
                 app:title="Awareness" />
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/bRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:inner_view="@layout/skill_p_basicranged"
+                app:startExpanded="false"
+                app:title="Basic Ranged Proficiency">
+
+            </com.alespero.expandablecardview.ExpandableCardView>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/aRP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:inner_view="@layout/skill_p_basicranged"
+                app:startExpanded="false"
+                app:title="Advanced Ranged Proficiency" />
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/dualWield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:inner_view="@layout/skill_p_basicranged"
+                app:startExpanded="false"
+                app:title="Dual Wield" />
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/piloting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                app:animationDuration="300"
+                app:expandOnClick="true"
+                app:inner_view="@layout/skill_p_basicranged"
+                app:startExpanded="false"
+                app:title="Piloting" />
         </android.support.v7.widget.CardView>
 
         <Space
