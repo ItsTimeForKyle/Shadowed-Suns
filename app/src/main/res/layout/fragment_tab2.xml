@@ -95,7 +95,7 @@
                 android:textSize="16sp"
                 app:animationDuration="300"
                 app:expandOnClick="true"
-                app:inner_view="@layout/skill_p_insight1"
+                app:inner_view="@layout/skill_p_insight"
                 app:startExpanded="false"
                 app:title="Insight" />
         </android.support.v7.widget.CardView>

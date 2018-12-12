@@ -1,62 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/pointHeader3BR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="3 point skills" />
-    <TextView
         android:id="@+id/handguns"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Handguns" 
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Handguns"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:textSize="18sp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <!-- Gunslinger Skill -->
+    <View
+        android:id="@+id/view9"
+        style="@style/Divider"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunSlingerText" />
+
+    <View
+        android:id="@+id/view10"
+        style="@style/Divider"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carefulShooterText" />
+
     <TextView
-         android:id="@id/gunSlinger"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="Gunslinger(3)" />                                         
+        android:id="@+id/gunSlinger"
+        style="@style/CardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Gunslinger(3)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handguns" />
+
     <TextView
-         android:id="@id/gunSlingerText"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="When using a handgun you gain +2 to damage rolls." />
+        android:id="@+id/gunSlingerText"
+        style="@style/CardBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="When using a handgun you gain +2 to damage rolls."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunSlinger" />
     
     <!-- Careful Shooter Skill -->
-    
+
     <TextView
-         android:id="@id/carefulShooter"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="Careful Shooter(3)" 
-         android:textSize="16sp" />                                         
+        android:id="@+id/carefulShooter"
+        style="@style/CardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Careful Shooter(3)"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
     <TextView
-         android:id="@id/carefulShooterText"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="You keep both hands on your weapon and take carefully placed shots. +2 to attack rolls with handguns. Must have a free hand." />
+        android:id="@+id/carefulShooterText"
+        style="@style/CardBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="You keep both hands on your weapon and take carefully placed shots. +2 to attack rolls with handguns. Must have a free hand."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carefulShooter" />
+
     <TextView
-              android:id="@id/shotgun"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="Shotgun"
-              android:textSize="18sp"
-              android:textStyle="bold" />
+        android:id="@+id/shotgun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Shotgun"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
     <TextView
-              android:id"@id/keepItFull"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="Keep it Full"
-              android:textSize="16sp" />
+        android:id="@+id/keepItFull"
+        style="@style/CardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Keep it Full"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shotgun" />
+
     <TextView
-              android:id"@id/keepItFullText"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="You keep your shotgun loaded and ready to go. Reloading your shotgun is a free action when you are in at least partial cover." />
+        android:id="@+id/keepItFullText"
+        style="@style/CardBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="You keep your shotgun loaded and ready to go. Reloading your shotgun is a free action when you are in at least partial cover."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keepItFull" />
    
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
